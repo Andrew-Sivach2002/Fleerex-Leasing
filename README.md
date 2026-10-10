@@ -18,7 +18,8 @@ images/
 .gitignore                       Files git should ignore
 ```
 
-Repository: https://github.com/Andrew-Sivach2002/fleetrex-leasing
+Repository: https://github.com/Andrew-Sivach2002/Fleetrex-Leasing
+Live site: https://andrew-sivach2002.github.io/Fleetrex-Leasing/
 
 ## Open the site on your computer
 
@@ -46,7 +47,8 @@ All text is in `index.html`. Each section starts with a comment like `<!-- 4. OU
 
 ### Decorative stock photos and animated trucks
 
-- `images/stock-1.jpg`, `stock-2.jpg`, `stock-3.jpg` are decorative stock photos. They are **not our fleet**, so they have no captions. They appear in the photo band below "How it works", and `stock-2.jpg` is also the background of the Contact section (set in `css/styles.css`). Keep each file under **400 KB**.
+- The photo band below "How it works" shows three decorative illustrations: `images/scene-sunrise.svg`, `scene-night.svg` and `scene-day.svg`. `scene-night.svg` is also the faint background of the Contact section (set in `css/styles.css`). They are **not our fleet**, so they have no captions.
+- To use real stock photos instead: add them to `images/` (each under **400 KB**), then replace the three `scene-....svg` names in `index.html`, and the one in `css/styles.css`.
 - The small blue trucks (under "How it works" and above the footer) are a drawing inside `index.html` (look for `<symbol id="truck">`). They are decoration only. Visitors who turn on "reduce motion" on their device see them parked instead of moving.
 
 ### Fill in truck specifications
@@ -90,9 +92,11 @@ Short version:
 1. Merge your changes into the `main` branch.
 2. On GitHub, open the repository's **Settings → Pages**.
 3. Under **Build and deployment**, set **Source** to *Deploy from a branch*, choose branch **`main`** and folder **`/ (root)`**, then click **Save**.
-4. Wait 1–2 minutes, then refresh the page. GitHub shows the address of your live site: **https://andrew-sivach2002.github.io/fleetrex-leasing/**
+4. Wait 1–2 minutes, then refresh the page. GitHub shows the address of your live site: **https://andrew-sivach2002.github.io/Fleetrex-Leasing/**
 
 Every time you push a change to `main`, the site updates automatically within a minute or two.
+
+**Still seeing an old version?** Your browser may be using a cached copy. Do a hard refresh (**Ctrl+Shift+R** on Windows, **Cmd+Shift+R** on Mac; on a phone, close the tab and reopen it) or open the site in a private window. When you change `css/styles.css` or `js/main.js`, also bump the `?v=` number on their lines in `index.html` (e.g. `?v=4` → `?v=5`) so visitors get the new files right away.
 
 ### Using your own domain (optional)
 

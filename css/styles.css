@@ -665,7 +665,7 @@ a:hover { text-decoration-thickness: 2px; }
 .no-js .has-photo-bg {
   background-image:
     linear-gradient(180deg, rgba(20, 27, 36, 0.9), rgba(11, 15, 20, 0.95)),
-    url("../images/stock-2.jpg");
+    url("../images/scene-night.svg");
   background-size: cover;
   background-position: center;
 }
