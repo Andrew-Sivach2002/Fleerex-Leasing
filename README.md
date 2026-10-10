@@ -54,7 +54,7 @@ Search `index.html` for `andrewsuvach@gmail.com` and `9802440336` / `(980) 244-0
 
 ### Change colors
 
-The colors are defined at the top of `css/styles.css` (`--navy`, `--amber`, etc.). Change them in that one place.
+The colors are defined at the top of `css/styles.css` (`--bg`, `--blue`, `--green`, etc.). Change them in that one place.
 
 ## Connecting the contact form
 
