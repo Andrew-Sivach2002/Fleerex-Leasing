@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-label="Semi tractor placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1E2A3A"/>
+      <stop offset="1" stop-color="#2A3A50"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="560" fill="url(#bg)"/>
+  <rect y="430" width="800" height="130" fill="#16202E"/>
+  <rect y="478" width="800" height="6" fill="#F59E0B" opacity=".5"/>
+  <!-- simple semi tractor silhouette -->
+  <g fill="#3B4D66">
+    <rect x="170" y="330" width="470" height="70" rx="6"/>
+    <path d="M440 330V190a14 14 0 0 1 14-14h96l70 84v70z"/>
+    <rect x="410" y="150" width="16" height="180" rx="4"/>
+    <rect x="170" y="300" width="250" height="34" rx="4"/>
+  </g>
+  <path d="M470 196h72l48 58h-120z" fill="#0F1B2D" opacity=".7"/>
+  <g fill="#0F1B2D" stroke="#F59E0B" stroke-width="6">
+    <circle cx="250" cy="410" r="38"/>
+    <circle cx="340" cy="410" r="38"/>
+    <circle cx="570" cy="410" r="38"/>
+  </g>
+  <text x="400" y="90" fill="#E4E7EB" font-family="Arial, sans-serif" font-size="28" font-weight="700" text-anchor="middle">Photo coming soon</text>
+  <text x="400" y="124" fill="#B8C2CC" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">Replace images/hero-truck-placeholder.svg</text>
+</svg>
