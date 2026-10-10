@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="truck-body" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2F64F0"/><stop offset="1" stop-color="#1739A8"/></linearGradient>
+<linearGradient id="truck-beam" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#34D399" stop-opacity=".45"/><stop offset="1" stop-color="#34D399" stop-opacity="0"/></linearGradient>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#05070A"/><stop offset=".7" stop-color="#0D1A33"/><stop offset="1" stop-color="#10203F"/></linearGradient>
+</defs><rect width="1200" height="800" fill="url(#sky)"/>
+<circle cx="0" cy="20" r="1.0" fill="#E6EBF0" opacity="0.30"/><circle cx="97" cy="73" r="1.6" fill="#E6EBF0" opacity="0.42"/><circle cx="194" cy="126" r="2.2" fill="#E6EBF0" opacity="0.54"/><circle cx="291" cy="179" r="1.0" fill="#E6EBF0" opacity="0.66"/><circle cx="388" cy="232" r="1.6" fill="#E6EBF0" opacity="0.78"/><circle cx="485" cy="285" r="2.2" fill="#E6EBF0" opacity="0.30"/><circle cx="582" cy="338" r="1.0" fill="#E6EBF0" opacity="0.42"/><circle cx="679" cy="391" r="1.6" fill="#E6EBF0" opacity="0.54"/><circle cx="776" cy="444" r="2.2" fill="#E6EBF0" opacity="0.66"/><circle cx="873" cy="67" r="1.0" fill="#E6EBF0" opacity="0.78"/><circle cx="970" cy="120" r="1.6" fill="#E6EBF0" opacity="0.30"/><circle cx="1067" cy="173" r="2.2" fill="#E6EBF0" opacity="0.42"/><circle cx="1164" cy="226" r="1.0" fill="#E6EBF0" opacity="0.54"/><circle cx="61" cy="279" r="1.6" fill="#E6EBF0" opacity="0.66"/><circle cx="158" cy="332" r="2.2" fill="#E6EBF0" opacity="0.78"/><circle cx="255" cy="385" r="1.0" fill="#E6EBF0" opacity="0.30"/><circle cx="352" cy="438" r="1.6" fill="#E6EBF0" opacity="0.42"/><circle cx="449" cy="61" r="2.2" fill="#E6EBF0" opacity="0.54"/><circle cx="546" cy="114" r="1.0" fill="#E6EBF0" opacity="0.66"/><circle cx="643" cy="167" r="1.6" fill="#E6EBF0" opacity="0.78"/><circle cx="740" cy="220" r="2.2" fill="#E6EBF0" opacity="0.30"/><circle cx="837" cy="273" r="1.0" fill="#E6EBF0" opacity="0.42"/><circle cx="934" cy="326" r="1.6" fill="#E6EBF0" opacity="0.54"/><circle cx="1031" cy="379" r="2.2" fill="#E6EBF0" opacity="0.66"/><circle cx="1128" cy="432" r="1.0" fill="#E6EBF0" opacity="0.78"/><circle cx="25" cy="55" r="1.6" fill="#E6EBF0" opacity="0.30"/><circle cx="122" cy="108" r="2.2" fill="#E6EBF0" opacity="0.42"/><circle cx="219" cy="161" r="1.0" fill="#E6EBF0" opacity="0.54"/><circle cx="316" cy="214" r="1.6" fill="#E6EBF0" opacity="0.66"/><circle cx="413" cy="267" r="2.2" fill="#E6EBF0" opacity="0.78"/><circle cx="510" cy="320" r="1.0" fill="#E6EBF0" opacity="0.30"/><circle cx="607" cy="373" r="1.6" fill="#E6EBF0" opacity="0.42"/><circle cx="704" cy="426" r="2.2" fill="#E6EBF0" opacity="0.54"/><circle cx="801" cy="49" r="1.0" fill="#E6EBF0" opacity="0.66"/><circle cx="898" cy="102" r="1.6" fill="#E6EBF0" opacity="0.78"/><circle cx="995" cy="155" r="2.2" fill="#E6EBF0" opacity="0.30"/><circle cx="1092" cy="208" r="1.0" fill="#E6EBF0" opacity="0.42"/><circle cx="1189" cy="261" r="1.6" fill="#E6EBF0" opacity="0.54"/><circle cx="86" cy="314" r="2.2" fill="#E6EBF0" opacity="0.66"/><circle cx="183" cy="367" r="1.0" fill="#E6EBF0" opacity="0.78"/><circle cx="280" cy="420" r="1.6" fill="#E6EBF0" opacity="0.30"/><circle cx="377" cy="43" r="2.2" fill="#E6EBF0" opacity="0.42"/><circle cx="474" cy="96" r="1.0" fill="#E6EBF0" opacity="0.54"/><circle cx="571" cy="149" r="1.6" fill="#E6EBF0" opacity="0.66"/><circle cx="668" cy="202" r="2.2" fill="#E6EBF0" opacity="0.78"/><circle cx="765" cy="255" r="1.0" fill="#E6EBF0" opacity="0.30"/><circle cx="862" cy="308" r="1.6" fill="#E6EBF0" opacity="0.42"/><circle cx="959" cy="361" r="2.2" fill="#E6EBF0" opacity="0.54"/><circle cx="1056" cy="414" r="1.0" fill="#E6EBF0" opacity="0.66"/><circle cx="1153" cy="37" r="1.6" fill="#E6EBF0" opacity="0.78"/><circle cx="50" cy="90" r="2.2" fill="#E6EBF0" opacity="0.30"/><circle cx="147" cy="143" r="1.0" fill="#E6EBF0" opacity="0.42"/><circle cx="244" cy="196" r="1.6" fill="#E6EBF0" opacity="0.54"/><circle cx="341" cy="249" r="2.2" fill="#E6EBF0" opacity="0.66"/><circle cx="438" cy="302" r="1.0" fill="#E6EBF0" opacity="0.78"/><circle cx="535" cy="355" r="1.6" fill="#E6EBF0" opacity="0.30"/><circle cx="632" cy="408" r="2.2" fill="#E6EBF0" opacity="0.42"/><circle cx="729" cy="31" r="1.0" fill="#E6EBF0" opacity="0.54"/><circle cx="826" cy="84" r="1.6" fill="#E6EBF0" opacity="0.66"/><circle cx="923" cy="137" r="2.2" fill="#E6EBF0" opacity="0.78"/><circle cx="1020" cy="190" r="1.0" fill="#E6EBF0" opacity="0.30"/><circle cx="1117" cy="243" r="1.6" fill="#E6EBF0" opacity="0.42"/><circle cx="14" cy="296" r="2.2" fill="#E6EBF0" opacity="0.54"/><circle cx="111" cy="349" r="1.0" fill="#E6EBF0" opacity="0.66"/><circle cx="208" cy="402" r="1.6" fill="#E6EBF0" opacity="0.78"/><circle cx="305" cy="25" r="2.2" fill="#E6EBF0" opacity="0.30"/><circle cx="402" cy="78" r="1.0" fill="#E6EBF0" opacity="0.42"/><circle cx="499" cy="131" r="1.6" fill="#E6EBF0" opacity="0.54"/><circle cx="596" cy="184" r="2.2" fill="#E6EBF0" opacity="0.66"/><circle cx="693" cy="237" r="1.0" fill="#E6EBF0" opacity="0.78"/>
+<circle cx="980" cy="140" r="46" fill="#E6EBF0" opacity=".9"/><circle cx="1000" cy="128" r="44" fill="#0A1324"/>
+<path d="M0 540 Q250 480 520 525 T1000 500 T1200 510 V580 H0Z" fill="#0A0F18"/>
+<rect y="570" width="1200" height="230" fill="#06080C"/><rect y="570" width="1200" height="3" fill="#000" opacity=".25"/><rect x="-20" y="640" width="60" height="6" rx="3" fill="#33465E"/><rect x="100" y="640" width="60" height="6" rx="3" fill="#33465E"/><rect x="220" y="640" width="60" height="6" rx="3" fill="#33465E"/><rect x="340" y="640" width="60" height="6" rx="3" fill="#33465E"/><rect x="460" y="640" width="60" height="6" rx="3" fill="#33465E"/><rect x="580" y="640" width="60" height="6" rx="3" fill="#33465E"/><rect x="700" y="640" width="60" height="6" rx="3" fill="#33465E"/><rect x="820" y="640" width="60" height="6" rx="3" fill="#33465E"/><rect x="940" y="640" width="60" height="6" rx="3" fill="#33465E"/><rect x="1060" y="640" width="60" height="6" rx="3" fill="#33465E"/><rect x="1180" y="640" width="60" height="6" rx="3" fill="#33465E"/><g transform="translate(220 402) scale(2.6)">
+        <!-- headlight beam -->
+        <path d="M217 53 L260 44 L260 70 Z" fill="url(#truck-beam)"/>
+        <!-- exhaust stack -->
+        <rect x="124" y="2" width="4" height="34" rx="2" fill="#8FA3B8"/>
+        <!-- frame rail + fifth wheel -->
+        <rect x="8" y="66" width="206" height="7" rx="2" fill="#1E2A3A"/>
+        <rect x="16" y="60" width="38" height="6" rx="2" fill="#33465E"/>
+        <!-- fenders over drive axles -->
+        <path d="M13 70 Q13 62 21 62 H71 Q79 62 79 70 Z" fill="#223042"/>
+        <!-- mud flap -->
+        <rect x="6" y="68" width="4" height="20" rx="1" fill="#1E2A3A"/>
+        <!-- sleeper + cab + hood -->
+        <path fill="url(#truck-body)" d="M80 72 V26 Q80 18 88 18 H150 L170 40 Q192 43 210 47 Q217 49 217 56 V72 H206 A16 16 0 0 0 174 72 Z"/>
+        <!-- windows -->
+        <path d="M134 24 H149 L163 40 H134 Z" fill="#0B0F14" opacity=".88"/>
+        <rect x="90" y="26" width="24" height="9" rx="3" fill="#0B0F14" opacity=".55"/>
+        <!-- window glint -->
+        <path d="M140 26 L146 26 L138 38 L134 38 Z" fill="#FFFFFF" opacity=".08"/>
+        <!-- door line + mirror -->
+        <path d="M131 23 V64" stroke="#0B0F14" stroke-opacity=".35" stroke-width="1"/>
+        <rect x="164" y="26" width="3" height="13" rx="1.5" fill="#1E2A3A"/>
+        <!-- emerald pinstripe -->
+        <path d="M82 62 H172" stroke="#10B981" stroke-width="2"/>
+        <!-- fuel tank -->
+        <rect x="96" y="64" width="38" height="12" rx="6" fill="#8FA3B8"/>
+        <rect x="96" y="64" width="38" height="4" rx="2" fill="#FFFFFF" opacity=".25"/>
+        <!-- bumper + headlight -->
+        <rect x="205" y="68" width="15" height="6" rx="2" fill="#8FA3B8"/>
+        <rect x="209" y="51" width="8" height="4" rx="2" fill="#34D399"/>
+        <!-- wheels -->
+        <g fill="#05070A">
+          <circle cx="31" cy="80" r="12"/><circle cx="61" cy="80" r="12"/><circle cx="190" cy="80" r="12"/>
+        </g>
+        <g fill="#8FA3B8">
+          <circle cx="31" cy="80" r="5.5"/><circle cx="61" cy="80" r="5.5"/><circle cx="190" cy="80" r="5.5"/>
+        </g>
+        <g fill="#10B981">
+          <circle cx="31" cy="80" r="2"/><circle cx="61" cy="80" r="2"/><circle cx="190" cy="80" r="2"/>
+        </g>
+      </g></svg>
