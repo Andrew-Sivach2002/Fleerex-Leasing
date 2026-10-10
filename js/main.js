@@ -38,10 +38,45 @@
   // Keep the footer year current
   document.getElementById('year').textContent = new Date().getFullYear();
 
-  // Scroll reveal: elements fade and slide in once as they enter the screen.
-  // Skipped entirely for visitors who prefer reduced motion.
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (reduceMotion || !('IntersectionObserver' in window)) return;
+  var contact = document.querySelector('.has-photo-bg');
+  var road = document.querySelector('.road');
+  var miniRoad = document.querySelector('.mini-road');
+
+  if (!('IntersectionObserver' in window)) {
+    contact.classList.add('bg-ready');
+    road.classList.add('is-active');
+    return;
+  }
+
+  // Contact background photo: load it only when the visitor gets close
+  var bgObserver = new IntersectionObserver(function (entries) {
+    if (entries[0].isIntersecting) {
+      contact.classList.add('bg-ready');
+      bgObserver.disconnect();
+    }
+  }, { rootMargin: '600px 0px' });
+  bgObserver.observe(contact);
+
+  // Footer truck: only animate while the road is on screen
+  new IntersectionObserver(function (entries) {
+    road.classList.toggle('is-active', entries[0].isIntersecting);
+  }).observe(road);
+
+  // Everything below adds movement, so it is skipped for reduced motion
+  if (reduceMotion) return;
+
+  // Small truck drives in once when "How it works" comes into view
+  miniRoad.classList.add('will-drive');
+  var miniObserver = new IntersectionObserver(function (entries) {
+    if (entries[0].isIntersecting) {
+      miniRoad.classList.add('is-visible');
+      miniObserver.disconnect();
+    }
+  }, { threshold: 0.6 });
+  miniObserver.observe(miniRoad);
+
+  // Scroll reveal: elements fade and slide in once as they enter the screen
 
   var groups = [
     document.querySelectorAll('.hero-text, .hero-media'),
