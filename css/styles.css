@@ -578,12 +578,155 @@ a:hover { text-decoration-thickness: 2px; }
   color: var(--muted);
 }
 
+/* ---------- Decorative trucks & photos ----------
+   Everything here is decoration only (aria-hidden in the HTML). */
+
+/* Hidden container that holds the reusable truck drawing */
+.svg-defs { position: absolute; width: 0; height: 0; overflow: hidden; }
+
+.truck { display: block; height: auto; overflow: visible; }
+
+/* Small truck that drives in under "How it works" and parks */
+.mini-road {
+  position: relative;
+  height: 64px;
+  margin-top: 48px;
+  overflow: hidden;
+}
+#how-it-works { padding-bottom: 24px; }
+.mini-road::before {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: 3px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-strong) 15%, var(--border-strong) 85%, transparent);
+}
+.truck-mini {
+  position: absolute;
+  bottom: 0;
+  width: 120px;
+  /* parks at the right edge of the content column */
+  left: calc(50% + min(540px, 50% - 20px) - 120px);
+}
+.mini-road.will-drive .truck-mini { transform: translate3d(-100vw, 0, 0); }
+.mini-road.will-drive.is-visible .truck-mini {
+  transform: none;
+  transition: transform 2.8s cubic-bezier(0.12, 0.7, 0.25, 1);
+}
+
+/* Photo band between "How it works" and "Terms" */
+.photo-band {
+  position: relative;
+  background: var(--bg-deep);
+  clip-path: polygon(0 var(--angle), 100% 0, 100% 100%, 0 100%);
+  /* runs underneath the angled top of the Terms section */
+  margin-bottom: calc(var(--angle) * -0.5);
+}
+.photo-band-track {
+  display: flex;
+  gap: 2px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.photo-band-track::-webkit-scrollbar { display: none; }
+.photo-tile {
+  position: relative;
+  flex: 0 0 84%;
+  height: 300px;
+  overflow: hidden;
+  background: var(--surface);
+  scroll-snap-align: start;
+}
+.photo-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.02);
+  transition: transform 1.8s var(--ease);
+}
+/* Dark overlay with a faint blue/green tint */
+.photo-tile::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, rgba(29, 78, 216, 0.22), rgba(16, 185, 129, 0.08)),
+    linear-gradient(180deg, rgba(11, 15, 20, 0.35), rgba(11, 15, 20, 0.75));
+  transition: opacity 0.8s var(--ease);
+}
+.photo-tile:hover img { transform: scale(1.08); }
+.photo-tile:hover::after { opacity: 0.85; }
+
+/* Contact section: stock photo behind a dark overlay.
+   JavaScript adds .bg-ready when the section is close, so the photo loads lazily. */
+.has-photo-bg.bg-ready,
+.no-js .has-photo-bg {
+  background-image:
+    linear-gradient(180deg, rgba(20, 27, 36, 0.9), rgba(11, 15, 20, 0.95)),
+    url("../images/stock-2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Truck driving along the road line above the footer */
+.road {
+  position: relative;
+  height: 84px;
+  overflow: hidden;
+}
+.road::before,
+.road::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+}
+.road::before { /* road surface line */
+  bottom: 19px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--border-strong) 10%, var(--border-strong) 90%, transparent);
+}
+.road::after { /* lane dashes */
+  bottom: 10px;
+  height: 2px;
+  background: repeating-linear-gradient(90deg, rgba(143, 163, 184, 0.25) 0 24px, transparent 24px 56px);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+}
+.road-track {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: -150px;
+  width: calc(100% + 150px);
+  animation: drive 16s linear infinite;
+  will-change: transform;
+}
+.truck-road {
+  position: absolute;
+  left: 0;
+  bottom: 16px;
+  width: 150px;
+  animation: bob 0.7s ease-in-out infinite alternate;
+}
+@keyframes drive {
+  from { transform: translate3d(0, 0, 0); }
+  to   { transform: translate3d(100%, 0, 0); }
+}
+@keyframes bob {
+  from { transform: translateY(0); }
+  to   { transform: translateY(-1px); }
+}
+/* Pause the loop while the road is off screen (JavaScript adds .is-active) */
+html:not(.no-js) .road:not(.is-active) .road-track,
+html:not(.no-js) .road:not(.is-active) .truck-road { animation-play-state: paused; }
+
 /* ---------- Footer ---------- */
 .site-footer {
   position: relative;
   background: var(--bg-deep);
   color: var(--muted);
-  padding: 32px 0;
+  padding: 0 0 32px;
   font-size: 0.9rem;
 }
 .site-footer::before {
@@ -594,6 +737,7 @@ a:hover { text-decoration-thickness: 2px; }
   background: linear-gradient(90deg, transparent, var(--blue), var(--green), transparent);
   opacity: 0.6;
 }
+.footer-inner { padding-top: 16px; }
 .footer-inner p { margin: 0.25em 0; }
 .site-footer strong { color: #FFFFFF; }
 
@@ -625,6 +769,8 @@ a:hover { text-decoration-thickness: 2px; }
 /* ---------- Larger screens ---------- */
 @media (min-width: 640px) {
   .steps { grid-template-columns: repeat(2, 1fr); }
+  .photo-band-track { display: grid; grid-template-columns: repeat(3, 1fr); overflow: visible; }
+  .photo-tile { height: clamp(260px, 30vw, 440px); }
   .field-row { grid-template-columns: 1fr 1fr; gap: 16px; }
   .contact-form { padding: 32px; }
 }
@@ -673,6 +819,14 @@ a:hover { text-decoration-thickness: 2px; }
 
   .contact-inner { grid-template-columns: 1fr 1.2fr; gap: 64px; align-items: start; }
 
+  .mini-road { height: 80px; margin-top: 64px; }
+  #how-it-works { padding-bottom: 32px; }
+  .truck-mini { width: 160px; left: calc(50% + min(540px, 50% - 20px) - 160px); }
+
+  .road { height: 96px; }
+  .road-track { left: -200px; width: calc(100% + 200px); animation-duration: 28s; }
+  .truck-road { width: 200px; bottom: 13px; }
+
   .footer-inner { display: flex; justify-content: space-between; }
 }
 
@@ -687,4 +841,7 @@ a:hover { text-decoration-thickness: 2px; }
   .step:hover,
   .truck-card:hover { transform: none; }
   .reveal { opacity: 1; transform: none; }
+  .photo-tile:hover img { transform: scale(1.02); }
+  .road-track { left: 0; width: 100%; transform: none; }
+  .truck-road { left: auto; right: 12%; }
 }

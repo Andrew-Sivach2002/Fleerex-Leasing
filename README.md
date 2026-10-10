@@ -44,6 +44,11 @@ All text is in `index.html`. Each section starts with a comment like `<!-- 4. OU
    - `width` and `height` should match the photo's real size in pixels.
 3. Delete the old placeholder file if you no longer need it.
 
+### Decorative stock photos and animated trucks
+
+- `images/stock-1.jpg`, `stock-2.jpg`, `stock-3.jpg` are decorative stock photos. They are **not our fleet**, so they have no captions. They appear in the photo band below "How it works", and `stock-2.jpg` is also the background of the Contact section (set in `css/styles.css`). Keep each file under **400 KB**.
+- The small blue trucks (under "How it works" and above the footer) are a drawing inside `index.html` (look for `<symbol id="truck">`). They are decoration only. Visitors who turn on "reduce motion" on their device see them parked instead of moving.
+
 ### Fill in truck specifications
 
 In the "Our equipment" section, replace each `To be announced` with the real value (Make / model, Year, Engine, Transmission). To add another truck later, copy the whole `<article class="truck-card"> ... </article>` block and paste it right below.
