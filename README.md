@@ -18,6 +18,8 @@ images/
 .gitignore                       Files git should ignore
 ```
 
+Repository: https://github.com/Andrew-Sivach2002/fleetrex-leasing
+
 ## Open the site on your computer
 
 1. Download or clone this repository.
@@ -83,7 +85,7 @@ Short version:
 1. Merge your changes into the `main` branch.
 2. On GitHub, open the repository's **Settings → Pages**.
 3. Under **Build and deployment**, set **Source** to *Deploy from a branch*, choose branch **`main`** and folder **`/ (root)`**, then click **Save**.
-4. Wait 1–2 minutes, then refresh the page. GitHub shows the address of your live site, e.g. `https://<your-username>.github.io/<repository-name>/`.
+4. Wait 1–2 minutes, then refresh the page. GitHub shows the address of your live site: **https://andrew-sivach2002.github.io/fleetrex-leasing/**
 
 Every time you push a change to `main`, the site updates automatically within a minute or two.
 
