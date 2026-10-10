@@ -38,7 +38,7 @@ h2.cond{font-size:clamp(40px,6vw,58px);margin:8px 0 0}
 
 /* header */
 header.site{position:absolute;top:0;left:0;right:0;z-index:20}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 0}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:20px;padding-bottom:20px}
 .logo{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:28px;letter-spacing:1.5px}
 .menu{display:flex;align-items:center;gap:28px;font-weight:600}
 .menu a{color:#E6E9EF;text-decoration:none;position:relative;padding:4px 0}
@@ -73,11 +73,11 @@ header.site{position:absolute;top:0;left:0;right:0;z-index:20}
 .avail b{display:block;font-size:16px}
 .avail span.small{color:#D5DAE3;font-size:14px}
 @media (max-width:860px){
-  .hero-inner{padding-top:120px;padding-bottom:40px}
+  .hero-inner{padding-top:110px;padding-bottom:40px}
   .hero-text{padding-bottom:0}
   .hero .road{bottom:40px}
   .hero .ground{height:90px}
-  .avail{position:static;margin:0 24px 24px;align-self:flex-start}
+  .avail{position:static;margin:0;align-self:flex-start}
 }
 
 /* facts */
@@ -221,7 +221,6 @@ footer .wrap{padding:24px;display:flex;flex-wrap:wrap;justify-content:space-betw
   <div class="glow" aria-hidden="true"></div>
   <div class="ground" aria-hidden="true"></div>
   <div class="road" aria-hidden="true"></div>
-  <div class="avail rise d3"><span class="dot" aria-hidden="true"></span><div><b>Available now</b><span class="small">Day cab semi tractor · Charlotte, NC</span></div></div>
   <div class="wrap hero-inner">
     <div class="hero-text">
       <div class="tag rise"><span class="dot" aria-hidden="true"></span>Semi tractor leasing · Charlotte, NC</div>
@@ -232,6 +231,7 @@ footer .wrap{padding:24px;display:flex;flex-wrap:wrap;justify-content:space-betw
         <a class="btn btn-ghost" href="#how-it-works">How it works</a>
       </div>
     </div>
+    <div class="avail rise d3"><span class="dot" aria-hidden="true"></span><div><b>Available now</b><span class="small">Day cab semi tractor · Charlotte, NC</span></div></div>
     <div class="hero-truck">
       <svg role="img" aria-label="Fleetrex day cab semi tractor" viewBox="0 0 640 250">
         <ellipse cx="320" cy="236" rx="290" ry="9" fill="#000" opacity=".55"/>
